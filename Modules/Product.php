@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/Category.php';
+
 class product
 {
     public $name;
@@ -7,17 +9,11 @@ class product
     public $category;
     public $price;
 
-    public function __construct($name, $description, array $category, $price)
+    public function __construct($name, $description, category $category, $price)
     {
         $this->name = $name;
         $this->description = $description;
         $this->category = $category;
         $this->price = $price;
     }
-
-    public function getProduct()
-    {
-        return $this->name;
-    }
-
 }

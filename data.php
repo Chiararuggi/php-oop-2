@@ -4,17 +4,24 @@ require_once __DIR__ . '/Modules/Product.php';
 
 $products = [
     new product(
-        "Crocchette",
+        "Crocchette Schesir",
         "Crocchette per cani",
-        ["Cani", "Cibo"],
-        19,
+        new category ("Cane"),
+        30,
     ),
 
     new product(
-        "Cibo in scatola",
+        "Cibo in scatola Purina",
         "Cibo in scatola per gatti",
-        ["Gatti", "Cibo"],
-        30,
+        new category ("Gatto"),
+        2,
+    ),
+
+    new product(
+        "Topolino",
+        "Topolino attaccato ad un bastone",
+        new category ("Gatto"),
+        4,
     ),
     
 ];

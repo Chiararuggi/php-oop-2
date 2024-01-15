@@ -27,10 +27,13 @@ require __DIR__ . '/data.php';
                                 <?= $product->name ?>
                             </h5>
                             <h6 class="card-subtitle mb-2 text-muted">
-                                <?= $product->name ?>
+                                <?= $product->description ?>
+                            </h6>
+                            <h6 class="card-subtitle mb-2 text-muted">
+                                <?= $product->price ?> $
                             </h6>
                             <p class="card-text">
-                                <?= implode(", ", $product->category) ?>
+                                <?= $product->category->animalName ?>
                             </p>
                         </div>
                     </div>
