@@ -33,7 +33,7 @@ require __DIR__ . '/data.php';
                                 <?= $product->price ?> $
                             </h6>
                             <p class="card-text">
-                                <?= $product->category->animalName ?>
+                                <h6>Categoria:</h6><?= $product->category->animalName ?>
                             </p>
                         </div>
                     </div>
